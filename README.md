@@ -413,3 +413,13 @@ The remaining classes are inferred by setting SWRL rules as follows :
 	•	Data from different universities can be integrated if they use shared ontological standards, allowing for queries that span multiple institutions.
 
 By leveraging these capabilities, Protégé provides a powerful and flexible platform for managing the complex, hierarchical, and interconnected data involved in this project, offering significant advantages over traditional SQL databases.
+
+
+-------
+
+# Future Work 
+
+1. Add missing data (all instances of School,Department,Program,Courses)
+2. EnhanceTaggingSystem - ACMComputing Classification System or the Dublin Core Metadata Initiative to standardize tags.
+3. Link to External Data Source - Use federated queries to link the RDF data with external knowledge bases such as DBpedia, Wikidata etc
+4. Build a user-friendly web interface that allows students and administrators to execute SPARQL queries without needing deep technical knowledge.
