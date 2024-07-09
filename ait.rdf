@@ -1,0 +1,2139 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#"
+     xml:base="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:swrl="http://www.w3.org/2003/11/swrl#"
+     xmlns:swrla="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#"
+     xmlns:swrlb="http://www.w3.org/2003/11/swrlb#"
+     xmlns:untitled-ontology-33="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled -->
+
+    <owl:AnnotationProperty rdf:about="http://swrl.stanford.edu/ontologies/3.3/swrla.owl#isRuleEnabled"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#hasAdvisee -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#hasAdvisee">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isAdviseeOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Faculty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#hasDepartment -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#hasDepartment">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isDepartmentOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#School"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Department"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#hasElectiveCourse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#hasElectiveCourse">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#hasProgram -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#hasProgram">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isProgramOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Department"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#hasRequiredCourse -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#hasRequiredCourse">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isRequiredCourseOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#hasSchool -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#hasSchool">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isSchoolOf"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#University"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#School"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isAdviseeOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isAdviseeOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Faculty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isDepartmentOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isDepartmentOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Department"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#School"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isProgramOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isProgramOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Department"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isRequiredCourseOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isRequiredCourseOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isSchoolOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isSchoolOf">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#School"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#University"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#istaken -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#istaken">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#takes"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Student"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#takes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#takes">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Person"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Student"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#credit -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#credit">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#hasTag -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#hasTag">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#researchArea -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#researchArea">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#student_id -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#student_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#term -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#term">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Department -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Department">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ElectiveCourse"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#RequiredCourse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ElectiveCourse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ElectiveCourse">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#School"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#University"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Faculty -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Faculty">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Person"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Student"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#IntrCourses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#IntrCourses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#LessThanThreeCreditCourses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#LessThanThreeCreditCourses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ManagementCourses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ManagementCourses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Person -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Person">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#RequiredCourse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#RequiredCourse"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#RequiredCourse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#RequiredCourse">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isRequiredCourseOf"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#School"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#University"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#School -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#School">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Student -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Student">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Person"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ThreeCreditManagementJanCourses -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ThreeCreditManagementJanCourses">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#TwoCreditCourse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#TwoCreditCourse">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#credit"/>
+                        <owl:hasValue rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</owl:hasValue>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#University -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#University">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Awaneendra -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Awaneendra">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Student"/>
+        <isAdviseeOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Dr.Chaklam"/>
+        <takes rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_E-BusinessDevelopmentandTechnology"/>
+        <takes rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_HumanComputerInteractionandInformationVisualization"/>
+        <takes rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_TheSemanticWebTechnologies"/>
+        <student_id>st124433</student_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Biraj -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Biraj">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Student"/>
+        <isAdviseeOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Dr.Chutiporn"/>
+        <takes rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_ComputerSecurity"/>
+        <takes rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_MachineLearning"/>
+        <takes rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_TheSemanticWebTechnologies"/>
+        <student_id>st124371</student_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#CIE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#CIE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Department"/>
+        <isDepartmentOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#SET"/>
+        <rdfs:comment>Department Name = Department of Civil and Infrastructure Engineering</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#CS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#CS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_AdvancedTopicsinInternetTechnology"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_ComputationalGeometryandApplication"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_ComputerGraphicsandAnimation"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_ComputerNetworks"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_ComputerSecurity"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_HumanComputerInteractionandInformationVisualization"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_MachineLearning"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_SofwareArchitectureDesign"/>
+        <hasRequiredCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_DataStructuresAndAlgorithm"/>
+        <hasRequiredCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_ProgrammingLanguageAndCompiler"/>
+        <hasRequiredCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_TheoryOfComputation"/>
+        <hasRequiredCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_WebApplicationEngineering"/>
+        <isProgramOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ICT"/>
+        <rdfs:comment>Program Name = Computer Science</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#CorporateEnvironmentalManagement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#CorporateEnvironmentalManagement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#IntrCourses"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#LessThanThreeCreditCourses"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Cost-BenefitAnalysisofWastewaterTreatmentSystems -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Cost-BenefitAnalysisofWastewaterTreatmentSystems">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#LessThanThreeCreditCourses"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_AdvancedProcessesforWastewaterTreatmentReuseandRecycling -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_AdvancedProcessesforWastewaterTreatmentReuseandRecycling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#LessThanThreeCreditCourses"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#EEM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</credit>
+        <hasTag>EnvironmentalEngineering</hasTag>
+        <hasTag>Recycling</hasTag>
+        <hasTag>WastewaterTreatment</hasTag>
+        <term>Jan</term>
+        <rdfs:comment>Course Name = Advanced Processes for Wastewater Treatment, Reuse and Recycling</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_AdvancedTopicsinInternetTechnology -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_AdvancedTopicsinInternetTechnology">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#CS"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>AdvancedTech</hasTag>
+        <hasTag>EmergingTechnologies</hasTag>
+        <hasTag>Internet</hasTag>
+        <term>Jan</term>
+        <rdfs:comment>Course Name = Advanced Topics in Internet Technology</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_AirPollutionEngineeringandManagement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_AirPollutionEngineeringandManagement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ManagementCourses"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#EEM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>AirPollution</hasTag>
+        <hasTag>Engineering</hasTag>
+        <hasTag>Management</hasTag>
+        <term>Aug</term>
+        <rdfs:comment>Course Name = Air Pollution Engineering and Management</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_AirPollutionModelingandApplications -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_AirPollutionModelingandApplications">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#IntrCourses"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#EEM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>AirPollution</hasTag>
+        <hasTag>EnvironmentalEngineering</hasTag>
+        <hasTag>Modeling</hasTag>
+        <term>INTR</term>
+        <rdfs:comment>Course Name = Air Pollution Modeling and Applications</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_AppliedMicrobiologyandLaboratory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_AppliedMicrobiologyandLaboratory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#EEM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>EnvironmentalScience</hasTag>
+        <hasTag>Laboratory</hasTag>
+        <hasTag>Microbiology</hasTag>
+        <term>Jan</term>
+        <rdfs:comment>Course Name = Applied Microbiology and Laboratory</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_BusinessIntelligenceandAnalytics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_BusinessIntelligenceandAnalytics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isRequiredCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isRequiredCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#IM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>Analytics</hasTag>
+        <hasTag>BI</hasTag>
+        <hasTag>DataAnalysis</hasTag>
+        <term>Jan</term>
+        <rdfs:comment>Course Name = Business Intelligence and Analytics</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_ClimateChangeandWaterResources -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_ClimateChangeandWaterResources">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#WEM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>ClimateChange</hasTag>
+        <hasTag>EnvironmentalImpact</hasTag>
+        <hasTag>WaterResources</hasTag>
+        <term>Jan</term>
+        <rdfs:comment>Course Name = Climate Change and Water Resources</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_ComputationalGeometryandApplication -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_ComputationalGeometryandApplication">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#CS"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>Algorithms</hasTag>
+        <hasTag>ComputationalApplications</hasTag>
+        <hasTag>Geometry</hasTag>
+        <term>Jan</term>
+        <rdfs:comment>Course Name = Computational Geometry and Application</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_ComputerGraphicsandAnimation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_ComputerGraphicsandAnimation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#CS"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>Animation</hasTag>
+        <hasTag>Graphics</hasTag>
+        <hasTag>Visualization</hasTag>
+        <term>Jan</term>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_ComputerNetworks -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_ComputerNetworks">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#CS"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>Communication</hasTag>
+        <hasTag>Networking</hasTag>
+        <hasTag>Protocols</hasTag>
+        <term>Aug</term>
+        <rdfs:comment>Course Name = Computer Networks</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_ComputerSecurity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_ComputerSecurity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#IntrCourses"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#CS"/>
+        <istaken rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Biraj"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>Cryptography</hasTag>
+        <hasTag>Cybersecurity</hasTag>
+        <hasTag>InformationSecurity</hasTag>
+        <term>INTR</term>
+        <rdfs:comment>Course Name = Computer Security</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_ConceptsinWaterModelling -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_ConceptsinWaterModelling">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#LessThanThreeCreditCourses"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isRequiredCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isRequiredCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#WEM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</credit>
+        <hasTag>EnvironmentalEngineering</hasTag>
+        <hasTag>Hydrology</hasTag>
+        <hasTag>WaterModeling</hasTag>
+        <term>Aug</term>
+        <rdfs:comment>Course Name = Concepts in Water Modelling</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_DataModelingandManagement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_DataModelingandManagement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isRequiredCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isRequiredCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#IM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>DataManagement</hasTag>
+        <hasTag>Databases</hasTag>
+        <hasTag>Modeling</hasTag>
+        <term>Aug</term>
+        <rdfs:comment>Course Name = Data Modeling and Management</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_DataStructuresAndAlgorithm -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_DataStructuresAndAlgorithm">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isRequiredCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isRequiredCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#CS"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>Algorithms</hasTag>
+        <hasTag>ComputerScience</hasTag>
+        <hasTag>DataStructures</hasTag>
+        <term>Jan</term>
+        <rdfs:comment>Course Name = Data Structures And Algorithm</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_E-BusinessDevelopmentandTechnology -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_E-BusinessDevelopmentandTechnology">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#IM"/>
+        <istaken rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Awaneendra"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>E-Business</hasTag>
+        <hasTag>E-Commerce</hasTag>
+        <hasTag>Technology</hasTag>
+        <term>Aug</term>
+        <rdfs:comment>Course Name = E-Business Development and Technology</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_EnvironmentalHealthandSanitation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_EnvironmentalHealthandSanitation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#EEM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>EnvironmentalHealth</hasTag>
+        <hasTag>PublicHealth</hasTag>
+        <hasTag>Sanitation</hasTag>
+        <term>Jan</term>
+        <rdfs:comment>Course Name = Environmental Health and Sanitation</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_EnvironmentalImpactAssessment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_EnvironmentalImpactAssessment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#EEM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>EIA</hasTag>
+        <hasTag>EnvironmentalPolicy</hasTag>
+        <hasTag>ImpactAssessment</hasTag>
+        <term>Aug</term>
+        <rdfs:comment>Course Name = Environmental Impact Assessment</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_EnvironmentalQualityManagement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_EnvironmentalQualityManagement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ManagementCourses"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ThreeCreditManagementJanCourses"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isRequiredCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isRequiredCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#EEM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>EnvironmentalQuality</hasTag>
+        <hasTag>Management</hasTag>
+        <hasTag>Monitoring</hasTag>
+        <term>Jan</term>
+        <rdfs:comment>Course Name = Environmental Quality Management</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_HazardousWasteTechnologyandManagement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_HazardousWasteTechnologyandManagement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#LessThanThreeCreditCourses"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ManagementCourses"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#EEM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</credit>
+        <hasTag>HazardousWaste</hasTag>
+        <hasTag>Management</hasTag>
+        <hasTag>Technology</hasTag>
+        <term>Aug</term>
+        <rdfs:comment>Course Name = Hazardous Waste Technology and Management</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_HumanComputerInteractionandInformationVisualization -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_HumanComputerInteractionandInformationVisualization">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isRequiredCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#CS"/>
+        <isRequiredCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#IM"/>
+        <istaken rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Awaneendra"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>HCI</hasTag>
+        <hasTag>UXDesign</hasTag>
+        <hasTag>Visualization</hasTag>
+        <term>Jan</term>
+        <rdfs:comment>Course Name = Human Computer Interaction and Information Visualization</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_Hydrodynamics -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_Hydrodynamics">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isRequiredCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isRequiredCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#WEM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>FluidMechanics</hasTag>
+        <hasTag>Hydrodynamics</hasTag>
+        <hasTag>WaterEngineering</hasTag>
+        <term>Aug</term>
+        <rdfs:comment>Course Name = Hydrodynamics</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_IndustrialWasteAbatementandManagement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_IndustrialWasteAbatementandManagement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ManagementCourses"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ThreeCreditManagementJanCourses"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#EEM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>IndustrialWaste</hasTag>
+        <hasTag>Management</hasTag>
+        <hasTag>PollutionControl</hasTag>
+        <term>Jan</term>
+        <rdfs:comment>Course Name = Industrial Waste Abatement and Management</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_InformationSystemsDevelopmentandManagement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_InformationSystemsDevelopmentandManagement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ManagementCourses"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isRequiredCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isRequiredCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#IM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>ITDevelopment</hasTag>
+        <hasTag>InformationSystems</hasTag>
+        <hasTag>Management</hasTag>
+        <term>Aug</term>
+        <rdfs:comment>Course Name = Information Systems Development and Management</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_IntegratedWaterResourcesManagement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_IntegratedWaterResourcesManagement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#WEM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>IWRM</hasTag>
+        <hasTag>Sustainability</hasTag>
+        <hasTag>WaterManagement</hasTag>
+        <term>Jan</term>
+        <rdfs:comment>Course Name = Integrated Water Resources Management</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_MachineLearning -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_MachineLearning">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#CS"/>
+        <istaken rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Biraj"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>AI</hasTag>
+        <hasTag>DataScience</hasTag>
+        <hasTag>MachineLearning</hasTag>
+        <term>Aug</term>
+        <rdfs:comment>Course Name = Machine Learning</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_MembraneTechnologyinWaterandWastewaterTreatment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_MembraneTechnologyinWaterandWastewaterTreatment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#LessThanThreeCreditCourses"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#EEM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</credit>
+        <hasTag>MembraneTechnology</hasTag>
+        <hasTag>Wastewater</hasTag>
+        <hasTag>WaterTreatment</hasTag>
+        <term>Aug</term>
+        <rdfs:comment>Course Name = Membrane Technology in Water and Wastewater Treatment</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_ProgrammingLanguageAndCompiler -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_ProgrammingLanguageAndCompiler">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isRequiredCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isRequiredCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#CS"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>Compilers</hasTag>
+        <hasTag>LanguageDesign</hasTag>
+        <hasTag>Programming</hasTag>
+        <term>Jan</term>
+        <rdfs:comment>Cousre Name = Programming Language And Compiler</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_ResearchDesignandExperimentalMethods -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_ResearchDesignandExperimentalMethods">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#LessThanThreeCreditCourses"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isRequiredCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isRequiredCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#WEM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</credit>
+        <hasTag>ExperimentalMethods</hasTag>
+        <hasTag>ResearchDesign</hasTag>
+        <hasTag>WaterResources</hasTag>
+        <term>Jan</term>
+        <rdfs:comment>Course Name = Research Design and Experimental Methods</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_SamplingDesignforEnvironmentalMonitoring -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_SamplingDesignforEnvironmentalMonitoring">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#LessThanThreeCreditCourses"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#EEM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</credit>
+        <hasTag>Design</hasTag>
+        <hasTag>EnvironmentalMonitoring</hasTag>
+        <hasTag>Sampling</hasTag>
+        <term>Aug</term>
+        <rdfs:comment>Course Name = Sampling Design for Environmental Monitoring</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_SofwareArchitectureDesign -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_SofwareArchitectureDesign">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#CS"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>Architecture</hasTag>
+        <hasTag>SoftwareDesign</hasTag>
+        <hasTag>SystemsEngineering</hasTag>
+        <term>Jan</term>
+        <rdfs:comment>Course Name = Sofware Architecture Design</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_SolidWasteManagement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_SolidWasteManagement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#EEM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>Recycling</hasTag>
+        <hasTag>Sustainability</hasTag>
+        <hasTag>WasteManagement</hasTag>
+        <term>Aug</term>
+        <rdfs:comment>Course Name = Solid Waste Management</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_TheSemanticWebTechnologies -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_TheSemanticWebTechnologies">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#IntrCourses"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#IM"/>
+        <istaken rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Awaneendra"/>
+        <istaken rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Biraj"/>
+        <istaken rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Sunil"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>LinkedData</hasTag>
+        <hasTag>Ontologies</hasTag>
+        <hasTag>SemanticWeb</hasTag>
+        <term>INTR</term>
+        <rdfs:comment>Course Name = The Semantic Web Technologies</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_TheoryOfComputation -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_TheoryOfComputation">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isRequiredCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isRequiredCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#CS"/>
+        <istaken rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Sunil"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>Automata</hasTag>
+        <hasTag>ComputationTheory</hasTag>
+        <hasTag>FormalLanguages</hasTag>
+        <term>Aug</term>
+        <rdfs:comment>Course Name = Theory Of Computation</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_WastewaterTreatment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_WastewaterTreatment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#EEM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>EnvironmentalEngineering</hasTag>
+        <hasTag>Treatment</hasTag>
+        <hasTag>Wastewater</hasTag>
+        <term>Aug</term>
+        <rdfs:comment>Course Name = Wastewater Treatment</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_WaterQualityManagement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_WaterQualityManagement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#LessThanThreeCreditCourses"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ManagementCourses"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#EEM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</credit>
+        <hasTag>EnvironmentalScience</hasTag>
+        <hasTag>Management</hasTag>
+        <hasTag>WaterQuality</hasTag>
+        <term>Jan</term>
+        <rdfs:comment>Course Name = Water Quality Management</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_WatershedHydrology -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_WatershedHydrology">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isRequiredCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isRequiredCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#WEM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>Hydrology</hasTag>
+        <hasTag>WaterResources</hasTag>
+        <hasTag>Watershed</hasTag>
+        <term>Aug</term>
+        <rdfs:comment>Course Name = Watershed Hydrology</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_WebApplicationEngineering -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_WebApplicationEngineering">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isRequiredCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isRequiredCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#CS"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>FullStack</hasTag>
+        <hasTag>SoftwareEngineering</hasTag>
+        <hasTag>WebDevelopment</hasTag>
+        <term>Jan</term>
+        <rdfs:comment>Course Name = Web Application Engineering</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#DSAI -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#DSAI">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+        <isProgramOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ICT"/>
+        <rdfs:comment>Program Name = Data Science and Artificial Intelligence</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Dr.Chaklam -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Dr.Chaklam">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Faculty"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Person"/>
+        <hasAdvisee rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Awaneendra"/>
+        <researchArea>NLP</researchArea>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Dr.Chutiporn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Dr.Chutiporn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Faculty"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Person"/>
+        <hasAdvisee rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Biraj"/>
+        <researchArea>Database</researchArea>
+        <researchArea>Semantic</researchArea>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Dr.Vatcharaporn -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Dr.Vatcharaporn">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Faculty"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Person"/>
+        <hasAdvisee rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Sunil"/>
+        <researchArea>E-Governance</researchArea>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#EEM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#EEM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#CorporateEnvironmentalManagement"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Cost-BenefitAnalysisofWastewaterTreatmentSystems"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_AdvancedProcessesforWastewaterTreatmentReuseandRecycling"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_AirPollutionEngineeringandManagement"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_AirPollutionModelingandApplications"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_AppliedMicrobiologyandLaboratory"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_EnvironmentalHealthandSanitation"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_EnvironmentalImpactAssessment"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_HazardousWasteTechnologyandManagement"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_IndustrialWasteAbatementandManagement"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_MembraneTechnologyinWaterandWastewaterTreatment"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_SamplingDesignforEnvironmentalMonitoring"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_SolidWasteManagement"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_WastewaterTreatment"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_WaterQualityManagement"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ReceptorModelingforAirPollutionSourceApportionment"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#StateoftheArtofHazardousChemicalsManagement"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#WastewaterCollectionandSewerDesignModel"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_SelectedTopic:EnvironmentallySoundManagementofHazardousWastes/Chemicals–AnIntroductiontoInternationalConventions"/>
+        <hasRequiredCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_EnvironmentalQualityManagement"/>
+        <hasRequiredCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_EnvironmentalChemistry&amp;Laboratory"/>
+        <isProgramOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#WREE"/>
+        <rdfs:comment>Program Name = Environment Engineering Management</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ICT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ICT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Department"/>
+        <hasProgram rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#CS"/>
+        <hasProgram rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#DSAI"/>
+        <hasProgram rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ICT_program"/>
+        <hasProgram rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#IM"/>
+        <hasProgram rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#IoT"/>
+        <hasProgram rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#RSGIS"/>
+        <hasProgram rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#TC"/>
+        <isDepartmentOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#SET"/>
+        <rdfs:comment>Department Name = Department of Informations and Communications Technologies</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ICT_program -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ICT_program">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+        <isProgramOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ICT"/>
+        <rdfs:comment>Program Name = Information and Communication Technology</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#IM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#IM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_E-BusinessDevelopmentandTechnology"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_TheSemanticWebTechnologies"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#NaturalLanguageUnderstanding"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ProjectDesign"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#SeminarinElectronicGovernment"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#UsersandProducers"/>
+        <hasRequiredCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_BusinessIntelligenceandAnalytics"/>
+        <hasRequiredCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_DataModelingandManagement"/>
+        <hasRequiredCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_HumanComputerInteractionandInformationVisualization"/>
+        <hasRequiredCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_InformationSystemsDevelopmentandManagement"/>
+        <isProgramOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ICT"/>
+        <rdfs:comment>Program Name = Information Management</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ISE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ISE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Department"/>
+        <isDepartmentOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#SET"/>
+        <rdfs:comment>Department Name = Department Of Industrial System Engineering</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#IoT -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#IoT">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+        <isProgramOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ICT"/>
+        <rdfs:comment>Program Name = Internet of Things</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#NaturalLanguageUnderstanding -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#NaturalLanguageUnderstanding">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ProjectDesign -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ProjectDesign">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#RSGIS -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#RSGIS">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+        <isProgramOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ICT"/>
+        <rdfs:comment>Program Name = Remote Sensing and Geographic Information Systems</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ReceptorModelingforAirPollutionSourceApportionment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ReceptorModelingforAirPollutionSourceApportionment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#LessThanThreeCreditCourses"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#SERD -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#SERD">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#School"/>
+        <rdfs:comment>School Name = School Of Environment Resources and Development</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#SET -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#SET">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#School"/>
+        <hasDepartment rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#CIE"/>
+        <hasDepartment rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ICT"/>
+        <hasDepartment rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ISE"/>
+        <hasDepartment rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#WREE"/>
+        <rdfs:comment>School Name = School of Engineering and Technology</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#SOM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#SOM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#School"/>
+        <rdfs:comment>School Name = School of Management</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#SeminarinElectronicGovernment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#SeminarinElectronicGovernment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#IntrCourses"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#StateoftheArtofHazardousChemicalsManagement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#StateoftheArtofHazardousChemicalsManagement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#LessThanThreeCreditCourses"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ManagementCourses"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Sunil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Sunil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Person"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Student"/>
+        <isAdviseeOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Dr.Vatcharaporn"/>
+        <takes rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_TheSemanticWebTechnologies"/>
+        <takes rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_TheoryOfComputation"/>
+        <student_id>st124073</student_id>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#TC -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#TC">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+        <isProgramOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ICT"/>
+        <rdfs:comment>Program Name = Telecommunications</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#UsersandProducers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#UsersandProducers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ElectiveCourse"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#WEM -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#WEM">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_ClimateChangeandWaterResources"/>
+        <hasElectiveCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_IntegratedWaterResourcesManagement"/>
+        <hasRequiredCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_ConceptsinWaterModelling"/>
+        <hasRequiredCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_Hydrodynamics"/>
+        <hasRequiredCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_ResearchDesignandExperimentalMethods"/>
+        <hasRequiredCourse rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_WatershedHydrology"/>
+        <isProgramOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#WREE"/>
+        <rdfs:comment>Program Name = Water Engineering and Management</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#WREE -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#WREE">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Department"/>
+        <hasProgram rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#EEM"/>
+        <hasProgram rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#WEM"/>
+        <isDepartmentOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#SET"/>
+        <rdfs:comment>Department Name = Water resource and Environmental Engineering</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#WastewaterCollectionandSewerDesignModel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#WastewaterCollectionandSewerDesignModel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ElectiveCourse"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#IntrCourses"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#LessThanThreeCreditCourses"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_ArtificialIntelligence:NaturalLanguageUnderstanding -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_ArtificialIntelligence:NaturalLanguageUnderstanding">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#IM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>AI</hasTag>
+        <hasTag>ComputationalLinguistics</hasTag>
+        <hasTag>NLP</hasTag>
+        <term>Jan</term>
+        <rdfs:comment>Course Name = Artificial Intelligence: Natural Language Understanding</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_EnvironmentalChemistry&amp;Laboratory -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_EnvironmentalChemistry&amp;Laboratory">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isRequiredCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isRequiredCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#EEM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>EnvironmentalChemistry</hasTag>
+        <hasTag>Laboratory</hasTag>
+        <hasTag>Pollution</hasTag>
+        <term>Aug</term>
+        <rdfs:comment>Course Name = Environmental Chemistry &amp; Laboratory</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_InformationandCommunicationTechnologyApplications:ProjectDesign -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_InformationandCommunicationTechnologyApplications:ProjectDesign">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#IM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>Applications</hasTag>
+        <hasTag>ICT</hasTag>
+        <hasTag>ProjectDesign</hasTag>
+        <term>Jan</term>
+        <rdfs:comment>Course Name = Information and Communication Technology Applications: Project Design</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_InformationandCommunicationTechnologyApplications:UsersandProducers -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_InformationandCommunicationTechnologyApplications:UsersandProducers">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#IM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>Applications</hasTag>
+        <hasTag>ICT</hasTag>
+        <hasTag>UserExperience</hasTag>
+        <term>Aug</term>
+        <rdfs:comment>Course Name = Information and Communication Technology Applications: Users and Producers</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_SelectedTopic:CorporateEnvironmentalManagement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_SelectedTopic:CorporateEnvironmentalManagement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#EEM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</credit>
+        <hasTag>CorporateManagement</hasTag>
+        <hasTag>EnvironmentalManagement</hasTag>
+        <hasTag>Sustainability</hasTag>
+        <term>INTR</term>
+        <rdfs:comment>Course Name = Selected Topic: Corporate Environmental Management</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_SelectedTopic:Cost-BenefitAnalysisofWastewaterTreatmentSystems -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_SelectedTopic:Cost-BenefitAnalysisofWastewaterTreatmentSystems">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#EEM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</credit>
+        <hasTag>Cost-BenefitAnalysis</hasTag>
+        <hasTag>Economics</hasTag>
+        <hasTag>WastewaterTreatment</hasTag>
+        <term>Aug</term>
+        <rdfs:comment>Course Name = Selected Topic: Cost-Benefit Analysis of Wastewater Treatment Systems</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_SelectedTopic:ReceptorModelingforAirPollutionSourceApportionment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_SelectedTopic:ReceptorModelingforAirPollutionSourceApportionment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#EEM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</credit>
+        <hasTag>AirPollution</hasTag>
+        <hasTag>ReceptorModeling</hasTag>
+        <hasTag>SourceApportionment</hasTag>
+        <term>Aug</term>
+        <rdfs:comment>Course Name = Selected Topic: Receptor Modeling for Air Pollution Source Apportionment</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_SelectedTopic:SeminarinElectronicGovernment -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_SelectedTopic:SeminarinElectronicGovernment">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#IM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</credit>
+        <hasTag>DigitalTransformation</hasTag>
+        <hasTag>E-Government</hasTag>
+        <hasTag>PublicSector</hasTag>
+        <term>INTR</term>
+        <rdfs:comment>Course Name = Selected Topic: Seminar in Electronic Government</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_SelectedTopic:StateoftheArtofHazardousChemicalsManagement -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_SelectedTopic:StateoftheArtofHazardousChemicalsManagement">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#EEM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</credit>
+        <hasTag>EnvironmentalScience</hasTag>
+        <hasTag>HazardousChemicals</hasTag>
+        <hasTag>Management</hasTag>
+        <term>Jan</term>
+        <rdfs:comment>Course Name = Selected Topic: State of the Art of Hazardous Chemicals Management</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_SelectedTopic:WastewaterCollectionandSewerDesignModel -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_SelectedTopic:WastewaterCollectionandSewerDesignModel">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#EEM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</credit>
+        <hasTag>Modeling</hasTag>
+        <hasTag>SewerDesign</hasTag>
+        <hasTag>WastewaterCollection</hasTag>
+        <term>INTR</term>
+        <rdfs:comment>Course Name = Selected Topic: Wastewater Collection and Sewer Design Model</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_SelectedTopic:EnvironmentallySoundManagementofHazardousWastes/Chemicals–AnIntroductiontoInternationalConventions -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course_SelectedTopic:EnvironmentallySoundManagementofHazardousWastes/Chemicals–AnIntroductiontoInternationalConventions">
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#LessThanThreeCreditCourses"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ManagementCourses"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+            </owl:Restriction>
+        </rdf:type>
+        <isElectiveCourseOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#EEM"/>
+        <credit rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</credit>
+        <hasTag>HazardousWastes</hasTag>
+        <hasTag>InternationalConventions</hasTag>
+        <hasTag>Management</hasTag>
+        <term>Aug</term>
+        <rdfs:comment>Course Name = Selected Topic: Environmentally Sound Management of Hazardous Wastes/Chemicals – An Introduction to International Conventions</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isElectiveCourseOf"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+    </owl:Restriction>
+    <owl:Restriction>
+        <owl:onProperty rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#isRequiredCourseOf"/>
+        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Program"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+    </owl:Restriction>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Department"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Person"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#School"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#University"/>
+        </owl:members>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Rules
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/c">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://www.semanticweb.org/biraj/ontologies/2024/6/cr">
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Variable"/>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S1-LessThanThreeCreditRule</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#credit"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/c"/>
+                                <swrl:argument2 rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/cr"/>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#BuiltinAtom"/>
+                                        <swrl:builtin rdf:resource="http://www.w3.org/2003/11/swrlb#lessThan"/>
+                                        <swrl:arguments>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                <rdf:first rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/cr"/>
+                                                <rdf:rest>
+                                                    <rdf:Description>
+                                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
+                                                        <rdf:first rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</rdf:first>
+                                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                                    </rdf:Description>
+                                                </rdf:rest>
+                                            </rdf:Description>
+                                        </swrl:arguments>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#LessThanThreeCreditCourses"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S4-ThreeCreditManagementJanCoursesRule</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#hasTag"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/c"/>
+                                <swrl:argument2>Management</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                <rdf:first>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                        <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#term"/>
+                                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/c"/>
+                                        <swrl:argument2>Jan</swrl:argument2>
+                                    </rdf:Description>
+                                </rdf:first>
+                                <rdf:rest>
+                                    <rdf:Description>
+                                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                                        <rdf:first>
+                                            <rdf:Description>
+                                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#credit"/>
+                                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/c"/>
+                                                <swrl:argument2 rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</swrl:argument2>
+                                            </rdf:Description>
+                                        </rdf:first>
+                                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                                    </rdf:Description>
+                                </rdf:rest>
+                            </rdf:Description>
+                        </rdf:rest>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ThreeCreditManagementJanCourses"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S3-ManagementCoursesRule</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#hasTag"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/c"/>
+                                <swrl:argument2>Management</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#ManagementCourses"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+    <rdf:Description>
+        <swrla:isRuleEnabled rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</swrla:isRuleEnabled>
+        <rdfs:comment></rdfs:comment>
+        <rdfs:label>S2-IntrCoursesRule</rdfs:label>
+        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#Imp"/>
+        <swrl:body>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#Course"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                        <rdf:first>
+                            <rdf:Description>
+                                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#DatavaluedPropertyAtom"/>
+                                <swrl:propertyPredicate rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#term"/>
+                                <swrl:argument1 rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/c"/>
+                                <swrl:argument2>INTR</swrl:argument2>
+                            </rdf:Description>
+                        </rdf:first>
+                        <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+                    </rdf:Description>
+                </rdf:rest>
+            </rdf:Description>
+        </swrl:body>
+        <swrl:head>
+            <rdf:Description>
+                <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#AtomList"/>
+                <rdf:first>
+                    <rdf:Description>
+                        <rdf:type rdf:resource="http://www.w3.org/2003/11/swrl#ClassAtom"/>
+                        <swrl:classPredicate rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/untitled-ontology-33#IntrCourses"/>
+                        <swrl:argument1 rdf:resource="http://www.semanticweb.org/biraj/ontologies/2024/6/c"/>
+                    </rdf:Description>
+                </rdf:first>
+                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
+            </rdf:Description>
+        </swrl:head>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
