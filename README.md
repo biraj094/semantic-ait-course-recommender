@@ -365,18 +365,18 @@ The remaining classes are inferred by setting SWRL rules as follows :
 
 2. For <code>IntrCourses</code> class:
     ```
-untitled-ontology-33:Course(?c) ^ untitled-ontology-33:term(?c, "INTR"^^rdf:PlainLiteral) -> untitled-ontology-33:IntrCourses(?c)   
+    untitled-ontology-33:Course(?c) ^ untitled-ontology-33:term(?c, "INTR"^^rdf:PlainLiteral) -> untitled-ontology-33:IntrCourses(?c) 
     ```
 
 3. For <code>LessThanThreeCreditCourses</code> class:
-```
-untitled-ontology-33:Course(?c) ^ untitled-ontology-33:credit(?c, ?cr) ^ swrlb:lessThan(?cr, 3) -> untitled-ontology-33:LessThanThreeCreditCourses(?c)
-```
+    ```
+    untitled-ontology-33:Course(?c) ^ untitled-ontology-33:credit(?c, ?cr) ^ swrlb:lessThan(?cr, 3) -> untitled-ontology-33:LessThanThreeCreditCourses(?c)
+    ```
 
 4. For <code>ThreeCreditManagementJanCourses</code> class:
-```
-untitled-ontology-33:Course(?c) ^ untitled-ontology-33:hasTag(?c, "Management"^^rdf:PlainLiteral) ^ untitled-ontology-33:term(?c, "Jan"^^rdf:PlainLiteral) ^ untitled-ontology-33:credit(?c, 3) -> untitled-ontology-33:ThreeCreditManagementJanCourses(?c)
-```
+    ```
+    untitled-ontology-33:Course(?c) ^ untitled-ontology-33:hasTag(?c, "Management"^^rdf:PlainLiteral) ^ untitled-ontology-33:term(?c, "Jan"^^rdf:PlainLiteral) ^ untitled-ontology-33:credit(?c, 3) -> untitled-ontology-33:ThreeCreditManagementJanCourses(?c)
+    ```
 
 ---
 
