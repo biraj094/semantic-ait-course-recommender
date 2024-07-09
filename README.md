@@ -358,6 +358,9 @@ Here, the classes <code>ElectiveCourse</code> and <code>RequiredCourse</code> ar
 
 ![Class-rule-based-restriction](class-restriction.jpg)
 
+![Class-rule-based-restriction1](class-restriction-1.jpg)
+
+
 The remaining classes are inferred by setting SWRL rules as follows :
 
 1. For <code>ManagementCourses</code> class:
