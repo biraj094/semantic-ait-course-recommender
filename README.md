@@ -356,6 +356,8 @@ ORDER BY ?term ?sharedTags
 
 Here, the classes <code>ElectiveCourse</code> and <code>RequiredCourse</code> are inferred from the <code>Course</code> class.</code> We have used class restriction rules to infer them.Please check the <code>ait.rdf</code> file for more details.
 
+![Class-rule-based-restriction](class-restriction.jpg)
+
 The remaining classes are inferred by setting SWRL rules as follows :
 
 1. For <code>ManagementCourses</code> class:
